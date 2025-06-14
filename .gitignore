@@ -178,3 +178,6 @@ cython_debug/
 *.db.lock
 *.zip
 deepseek/api/milvus_docs/*
+
+# Cursor rules
+.cursor/*
