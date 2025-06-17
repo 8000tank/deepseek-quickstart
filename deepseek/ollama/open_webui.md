@@ -169,7 +169,7 @@ docker volume rm ollama  # 如果使用了捆绑安装
 | 参数 | 说明 |
 |------|------|
 | `-d` | 在后台运行容器（守护进程模式） |
-| `-p 3000:8080` | 将容器的 8080 端口映射到主机的 3000 端口 |
+| `-p 3000:8080` | 将主机的 3000 端口映射到容器的 8080 端口 |
 | `--add-host=host.docker.internal:host-gateway` | 允许容器访问主机服务 |
 | `-v open-webui:/app/backend/data` | 创建名为 open-webui 的卷并挂载到容器 |
 | `-v ollama:/root/.ollama` | 创建名为 ollama 的卷用于存储模型 |
