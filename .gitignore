@@ -183,3 +183,9 @@ a2a/*
 
 # Cursor rules
 .cursor/*
+
+# FastGPT 数据目录
+fastgpt/*/data/
+fastgpt/*/.minio.sys/
+fastgpt/aiproxy_pg/
+fastgpt/test.png
