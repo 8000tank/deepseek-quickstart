@@ -1,17 +1,34 @@
 {
-    "mcpServers": {
-        "weather": {
-            "disabled": false,
-            "timeout": 60,
-            "version": "1.0.0",
-            "type": "stdio",
-            "command": "uv",
-            "args": [
-                "--directory",
-                "/home/wy/wyfork/deepseek-quickstart/mcp/weather",
-                "run",
-                "weather.py"
-            ]
-        }
+  "mcpServers": {
+    "weather": {
+      "disabled": false,
+      "timeout": 60,
+      "version": "1.0.0",
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/home/wy/wyfork/deepseek-quickstart/mcp/weather",
+        "run",
+        "weather.py"
+      ]
+    },
+    "12306-mcp": {
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.net/90c82592281143/sse",
+      "disabled": false,
+      "alwaysAllow": [
+        "get-station-code-of-citys",
+        "get-tickets"
+      ]
+    },
+    "mcp_tool": {
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.net/e7178bcbd90e4e/sse",
+      "timeout": 30,
+      "alwaysAllow": [
+        "get_weather_forecast"
+      ]
     }
+  }
 }
