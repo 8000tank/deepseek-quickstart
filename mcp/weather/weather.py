@@ -88,7 +88,7 @@ async def get_forecast(latitude: float, longitude: float) -> str:
     根据给定的经纬度获取天气预报。
     同样，这个函数也是一个可被调用的 MCP 工具。
 
-    参数:
+    参数:【经查官网，API并不支持days参数，默认会获取7天的预报】
         latitude: 地点的纬度
         longitude: 地点的经度
     """

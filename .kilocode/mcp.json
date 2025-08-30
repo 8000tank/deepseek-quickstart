@@ -1,0 +1,17 @@
+{
+    "mcpServers": {
+        "weather": {
+            "disabled": false,
+            "timeout": 60,
+            "version": "1.0.0",
+            "type": "stdio",
+            "command": "uv",
+            "args": [
+                "--directory",
+                "/home/wy/wyfork/deepseek-quickstart/mcp/weather",
+                "run",
+                "weather.py"
+            ]
+        }
+    }
+}
